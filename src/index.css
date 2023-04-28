@@ -1,0 +1,617 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+.visually-hidden { 
+  position: absolute !important;
+  height: 1px; 
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap; /* added line */
+}
+
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* Default Styling */
+html {
+  font-size: 62.5%;
+}
+@font-face {
+  font-family: 'MaPolice';
+  src: url('DancingScript-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  background-color: #090302;
+  font-family: 'MaPolice', sans-serif;
+  line-height: 1.6;
+  font-size: 2rem;
+  overflow-x: hidden;
+}
+
+body,
+ul,
+li,
+a {
+  color: #E8D7F1;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.wrapper {
+  max-width: 1280px;
+  width: 90%;
+  margin: 0 auto;
+  
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+a,
+p,
+input,
+button,
+form,
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+ul,
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
+/* Typography */
+h1 {
+  padding: 0.5em 1em;
+}
+
+h1,
+.like-album svg:hover {
+  color: #FB8B24;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h2,
+.hamburger a {
+  font-size: 3.5rem;
+}
+
+
+h2,
+h3,
+.search-albums {
+  margin: 1em;
+}
+
+h3 {
+  font-size: 3rem;
+  letter-spacing: 0.05em;
+}
+
+h5 {
+  letter-spacing: 1.75px;
+
+}
+
+h5,
+.search button {
+  font-size: 1.6rem;
+}
+
+h2,
+h5,
+.hamburger a,
+.search button,
+.like-album svg:hover {
+  font-weight: bold;
+}
+
+h2,
+h3,
+h4,
+h5,
+.hamburger a,
+.top-nav a,
+.artist-list p,
+.album-container p,
+button {
+  text-transform: uppercase;
+}
+
+svg,
+.ham-input {
+  cursor: pointer;
+}
+
+.spacer {
+  height: 15vh;
+}
+
+nav,
+.top-nav,
+.artist-list,
+.artist-list-container,
+.top-albums,
+.album-container,
+.like-album,
+.playlist-container,
+.user-album,
+.selected-album,
+.listen,
+.search-albums {
+  display: flex;
+
+}
+
+nav,
+.artist-list,
+.artist-list-container,
+.album-container,
+.user-album {
+  justify-content: space-between;
+}
+
+nav,
+.artist-list,
+.top-albums,
+.like-album,
+.selected-album,
+.listen {
+  align-items: center;
+}
+
+.top-nav,
+.album-container,
+.like-album,
+.playlist-container {
+  flex-direction: column;
+}
+
+.build-album,
+.top-nav {
+  height: 100vh;
+}
+
+
+/* Header */
+.top-nav {
+  padding: 0.5em 1em;
+}
+
+
+/* Hamburger Menu
+Special credits to Erik Terwan's Codepen for the Hamburger Menu https://codepen.io/erikterwan/pen/EVzeRP?editors=1100 */
+
+.hamburger {
+  text-align: right;
+  padding-right: 40px;
+
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+  
+  /* Menu Links Styling */
+.hamburger a  {
+  letter-spacing: 3px;   
+}
+
+.hamburger a:hover {
+  transition: border 0.3s ease;
+  border-bottom: 4px solid #00BD9D;
+
+}
+
+.hamburger li {
+  padding: 1.2em 0;  
+}
+
+
+/* Input Checkbox */
+.ham-input,
+.top-nav {
+  position: absolute;
+}
+
+.ham-input {
+  display: block;
+  width: 50px;
+  height: 50px;
+  top: 35px;
+  right: 45px;
+
+  z-index: 2;
+  
+  -webkit-touch-callout: none;
+}
+
+.ham-input,
+.ham-input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+
+}
+
+.ham-input:checked ~ span,
+.ham-input:checked ~ span:nth-last-child(2),
+.ham-input:checked ~ ul {
+  opacity: 1;
+
+}
+
+.ham-input:checked ~ span,
+span {
+  background: #E8D7F1;
+
+} 
+
+.ham-input:checked ~ span {
+  transform: rotate(45deg) translate(0px, 0px);
+}
+
+.ham-input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+.ham-input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0px, -3px);
+}
+
+.ham-input:checked ~ ul {
+  transform: scale(1.0, 1.0);
+
+}
+
+/* In order to trigger the menu to open and close based on the :checked attribute */
+
+/* Icon */
+span {
+  display: block;
+  height: 4px;
+  width: 45px;
+  margin-bottom: 10px;
+  position: relative;
+  right: 15%;
+  top: 20%;
+
+  z-index: 1;
+
+  /* Animate Spans on Click */
+  transform-origin: 4px 0px;
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+  background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+  opacity 0.55s ease;
+}
+
+span:first-child {
+  transform-origin: 0% 0%;
+}
+
+span:last-child {
+  transform-origin: 0% 100%;
+}
+    
+
+.top-nav {
+  width: 100vw;
+  margin: -100px 0 0 0;
+  padding: 50px;
+  padding-top: 125px;
+  right: -20px;
+
+  background:linear-gradient(to bottom, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.95));
+  -webkit-font-smoothing: antialiased;
+
+  transform-origin: 0% 0%;
+  transform: translate(100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+.top-nav a {
+  letter-spacing: 1.75px;
+}
+
+
+/* Top Daily Artists */
+.search-container,
+.user-playlist,
+.artist-list {
+  border-top: 3px solid #FB3640;
+  border-right: 3px solid #FB3640;
+
+}
+
+.top-albums
+.playlist-container {
+  padding: 1em;
+
+}
+
+.top-albums {
+  border-bottom: 2px solid #FB3640;
+  border-left: 2px solid #FB3640;
+}
+
+.search-container {
+  margin: 4rem;   
+}
+
+.search-container,
+.top-albums,
+.playlist-container {
+  border-radius: 2.5px;
+}
+
+.artist-list-container,
+.search-container,
+.artist-list,
+.user-album {
+  padding: 2rem;
+  
+}
+
+.search-albums {
+  background: #171717;
+}
+
+.artist-list {
+  flex-basis: calc(50% - 20px);
+  margin: 1rem;
+}
+
+.artist-list,
+input[type="search"],
+button {
+  border-radius: 1.7px;
+}
+
+.artist-list-container,
+.top-albums,
+.playlist-container {
+  flex-wrap: wrap;
+  
+}
+
+.rank-container {
+  width: 15%;
+ 
+}
+
+.artist-container p,
+input[type="search"] {
+  letter-spacing: 1px;
+  
+}
+
+.top-albums,
+.like-album {
+  justify-content: space-evenly;
+
+}
+
+.top-albums {
+  margin: 10% auto;
+}
+
+.album-container {
+  flex-basis: calc(33% - 20px);
+  width: 30%;
+  margin: 1.5em 0.55em;
+}
+
+.album-container img {
+  border-radius: 50%;
+}
+
+.album-container p {
+  margin: 1em 0;
+}
+
+
+/* Search */
+.build-album {
+  margin-top: 20%;
+}
+
+.search-albums {
+  padding: 3.5rem 2.5rem;
+}
+
+input[type="search"],
+.search button {
+  padding: 0.5em 1.5em;
+}
+
+input[type="search"] {
+  width: 60%;
+  margin-right: 0.9em;
+}
+
+.search button {
+  background-color: #FB8B24;
+  letter-spacing: 0.5px;
+  padding: 0.8em 1.5em;
+  box-shadow: 2px 2px 1px 0px #595859;
+}
+
+.like-album svg {
+  color: #FC5252;
+}
+
+.like-album svg:hover {
+  transform: scale(1.2);
+}
+
+
+
+/* Playlists */
+.playlist-container {
+  border: 1px solid #f63f48;
+  padding: 1em;
+}
+
+.user-album {
+  background-color: #171717;
+  margin: 0.5em 1em;
+}
+
+.list-info {
+  margin-left: 4em;
+  text-align: left;
+
+}
+
+.list-info a {
+  font-size: 1.3rem; 
+}
+
+.artist-name {
+  margin: 1.1em 0;
+  letter-spacing: 0.06em;
+  font-size: 1.4rem;
+  font-weight: lighter;
+  color: #989898;
+}
+
+.listen svg {
+  margin-right: 0.8em;
+}
+
+
+
+
+/* Media Queries */
+@media (max-width: 850px){
+
+  .search-container {
+    margin: 0.5em;
+  }
+
+  .search-albums {
+    margin: 0.2em;
+  }
+
+  .search-albums {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  input[type="search"] {
+    width: 70%;
+    margin-bottom: 2em;
+    margin-right: 0;
+
+  }
+
+  input[type="search"]::placeholder {
+    text-align: center;
+  }
+
+  .search button {
+    padding: 0.8em 4em;
+  }
+
+  .like-album p {
+    font-size: 1.5rem;
+  }
+
+}
+
+
+@media (max-width: 768px){
+  /* Daily Top 10 */
+  .artist-list-container {
+    margin: 2em;
+  }
+
+  .artist-list {
+    margin: 0.3em 1rem;
+    padding: 1.3rem;
+  }
+
+
+  h3 {
+    margin: 3em auto;
+  }
+
+  .artist-list {
+    flex-basis: 100%;
+  }
+
+  .artist-list p {
+    font-size: 2rem;
+  }
+
+  .album-container {
+    margin: 1.5em 0.5em;
+  }
+
+  .list-info {
+    margin-left: 2.5rem;
+
+  }
+}
+
+
+@media (max-width: 500px){
+  .search-container {
+    margin: 0.5em;
+  }
+
+  .search-container, .search-albums {
+    padding: 1em;
+    background-color: #222220;
+  }
+
+  .search-albums {
+    margin: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  input[type="search"] {
+    width: 100%;
+    margin-bottom: 3em;
+    padding: 0.9em 1.5em;
+  }
+
+
+  .search button {
+    padding: 0.8em 3em;
+  }
+
+  .album-container {
+    width: 40%;
+    flex-basis: calc(50% - 10px);
+    margin: 1em 0.2em;
+  }
+
+  input[type="search"],
+  .like-album p {
+    font-size: 1.6rem;
+  }
+}
