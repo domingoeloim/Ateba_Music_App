@@ -14,7 +14,7 @@ class Catalogue extends Component {
     }
 
     componentDidMount() {
-        const apiKey = "a0b4a2a68217ad3b52fe53e7b7ba0679";
+        const apiKey = "dd1f8d7f863d24009906d4c05cfa1d1f";
     
         // First API call to grab top artists
         axios ({

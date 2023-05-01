@@ -1,144 +1,82 @@
-# Got Music?
+# Application Ateba Music ?
 
-Turn it on and turn up!  🎧🎶
+Allumez-le et montez le son ! 🎧🎶
 
-My take on Spotify where users can create playlists of top albums searched by artist with albums and artists pulled from Lastfm API.
+Mon idée pour Spotify serait que les utilisateurs puissent créer des listes de lecture à partir des albums les plus populaires recherchés par l'artiste, avec les albums et les artistes tirés de l'API de Lastfm.
 
-On page load, the user is shown the daily top 10 artists as per Lastfm.com.
+Lorsque la page se charge, l'utilisateur voit les 16 artistes les plus populaires du jour selon Lastfm.com.
 
-Scroll down a little further and search an artist, and “like” the albums you want added to your playlist.
-
+Faites défiler un peu plus loin et cherchez un artiste, puis "aimez" les albums que vous souhaitez ajouter à votre liste de lecture.
 
 ## Motivation
 
-It is a work in progress, however this project displays:
+C'est un projet en cours de développement, cependant ce projet démontre :
 
-- The ability to write JSX in both functional and class components
+- La capacité à écrire du JSX dans des composants fonctionnels et de classe
 
-- Multiple axios calls in different components
+- Plusieurs appels axios dans différents composants
 
-- Manipulating dynamically added elements to the page
+- Manipulation d'éléments ajoutés dynamiquement à la page
 
-- Event + Error handling
+- Gestion d'événements et d'erreurs
 
-- Creating, updating, and setting information to an external database
+- Création, mise à jour et configuration d'informations dans une base de données externe
 
-
-
-## Tech/Framework used
+## Technologies/Frameworks utilisés
 
 - HTML5
 - CSS3
 - React
 - Firebase
 - ECMAS 6
-- Lastfm API
+- API Lastfm
 - JSX
 
+## Caractéristiques
 
-## Features
+- Conçu selon les principes appris dans le cours de Scrimba sur les fondamentaux de l'UI/UX
 
-- Designed using principles learned in Scrimba’s UI/UX Fundamentals course
+- Design moderne, minimaliste et responsive
 
-- Modern, minimalist, and responsive design
+- Scoping et namespace de code
 
-- Scoping and namespacing of code
+- Accès à des bases de données multi-niveaux stockées dans Firebase
 
-- Accessing multi-level databases stored in Firebase
+- Fonctions fléchées ECMAS + Déclarations de fonctions
 
-- ECMAS Arrow functions + Function Declarations
+Ce projet a été démarré avec [Create React App](https://github.com/facebook/create-react-app).
 
+## Scripts disponibles
 
-
-
-
-
-
-
-----------------------------------------------------------
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
+Dans le répertoire du projet, vous pouvez exécuter :
 
 ### `npm start`
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Lance l'application en mode développement.<br />
+Ouvrez [http://localhost:3000](http://localhost:3000) pour le voir dans le navigateur.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+La page se recharge si vous apportez des modifications.<br />
+Vous verrez également toutes les erreurs de lint dans la console.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Lance le test runner en mode interactif.<br />
+Consultez la section sur [l'exécution de tests](https://facebook.github.io/create-react-app/docs/running-tests) pour plus d'informations.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Construit l'application pour la production dans le dossier `build`.<br />
+Il compile correctement React en mode production et optimise la construction pour de meilleures performances.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+La construction est minifiée et les noms de fichiers incluent les hashs.<br />
+Votre application est prête à être déployée !
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Consultez la section sur [le déploiement](https://facebook.github.io/create-react-app/docs/deployment) pour plus d'informations.
 
 ### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+**Note : ceci est une opération en sens unique. Une fois que vous `eject`, vous ne pouvez pas revenir en arrière !**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Si vous n'êtes pas satisfait de l'outil de construction et des choix de configuration, vous pouvez `eject` à tout moment. Cette commande supprimera la seule dépendance de construction de votre projet.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Au lieu de cela, elle copiera tous les fichiers de configuration et les dépendances transitives (webpack, Babel, ESLint, etc.) directement dans votre projet afin que vous ayez un contrôle total sur eux. Toutes les
