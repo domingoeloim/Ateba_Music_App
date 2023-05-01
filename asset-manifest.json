@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Ateba_Music_App/static/css/main.d12a6c17.chunk.css",
+    "main.js": "/Ateba_Music_App/static/js/main.cb36924a.chunk.js",
+    "main.js.map": "/Ateba_Music_App/static/js/main.cb36924a.chunk.js.map",
+    "runtime-main.js": "/Ateba_Music_App/static/js/runtime-main.a5e3eb3b.js",
+    "runtime-main.js.map": "/Ateba_Music_App/static/js/runtime-main.a5e3eb3b.js.map",
+    "static/js/2.d5ffd37f.chunk.js": "/Ateba_Music_App/static/js/2.d5ffd37f.chunk.js",
+    "static/js/2.d5ffd37f.chunk.js.map": "/Ateba_Music_App/static/js/2.d5ffd37f.chunk.js.map",
+    "index.html": "/Ateba_Music_App/index.html",
+    "precache-manifest.3f4f4dc58969dc112fce9a06e29ba03e.js": "/Ateba_Music_App/precache-manifest.3f4f4dc58969dc112fce9a06e29ba03e.js",
+    "service-worker.js": "/Ateba_Music_App/service-worker.js",
+    "static/css/main.d12a6c17.chunk.css.map": "/Ateba_Music_App/static/css/main.d12a6c17.chunk.css.map",
+    "static/js/2.d5ffd37f.chunk.js.LICENSE.txt": "/Ateba_Music_App/static/js/2.d5ffd37f.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/Ateba_Music_App/static/media/DancingScript-VariableFont_wght.adde56c1.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a5e3eb3b.js",
+    "static/js/2.d5ffd37f.chunk.js",
+    "static/css/main.d12a6c17.chunk.css",
+    "static/js/main.cb36924a.chunk.js"
+  ]
+}
