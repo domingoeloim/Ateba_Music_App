@@ -156,7 +156,7 @@ class Search extends Component {
             <div className="build-album wrapper">
                 <section className="search">
 
-                    <h2>Search an artist</h2>
+                    <h2>Rechercher vos artistes préfèrés</h2>
 
                     <div className="search-container">
 
@@ -170,7 +170,7 @@ class Search extends Component {
 
                         <input 
                         type="search" 
-                        placeholder="Enter artist name"
+                        placeholder="Enter le nom de l'artiste"
                         id= "search"
                         name="search"
                         aria-label="Search through site content"
@@ -179,7 +179,7 @@ class Search extends Component {
                         value={this.state.artistSearch}>
                         </input>
 
-                        <button type="submit">Get Music</button>
+                        <button type="submit">Obtenir la musique</button>
                 
                     </form>
                     
@@ -188,7 +188,7 @@ class Search extends Component {
 
                 <div className="spacer"></div>
 
-                <h3>Build your album collection</h3>
+                <h3>Construisez votre collection d'albums</h3>
 
                 <section className="top-albums">
             
@@ -210,7 +210,7 @@ class Search extends Component {
                 
                 <div className="spacer"></div>
 
-                <h3 id="playlist">Your Playlist</h3>
+                <h3 id="playlist">Votre Playlistes</h3>
                 <section  className="user-playlist">
 
                     <div className="playlist-container">

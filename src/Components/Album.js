@@ -14,7 +14,7 @@ const Album = ({album, playlist}) => {
 
             <div className="like-album">
 
-                <p title="Click heart to add to collection">{album.title}
+                <p title="Clique ici pour rajouter a vos favoris">{album.title}
                 </p>
                 {/* On click, we want to access the addtoPlaylist function in the Search component */}
                 <AiOutlineHeart onClick={() => playlist(album)}/>
