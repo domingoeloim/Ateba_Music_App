@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Ateba_Music_App/static/css/main.d12a6c17.chunk.css",
-    "main.js": "/Ateba_Music_App/static/js/main.62797404.chunk.js",
-    "main.js.map": "/Ateba_Music_App/static/js/main.62797404.chunk.js.map",
+    "main.js": "/Ateba_Music_App/static/js/main.e5df6511.chunk.js",
+    "main.js.map": "/Ateba_Music_App/static/js/main.e5df6511.chunk.js.map",
     "runtime-main.js": "/Ateba_Music_App/static/js/runtime-main.a5e3eb3b.js",
     "runtime-main.js.map": "/Ateba_Music_App/static/js/runtime-main.a5e3eb3b.js.map",
     "static/js/2.d5ffd37f.chunk.js": "/Ateba_Music_App/static/js/2.d5ffd37f.chunk.js",
     "static/js/2.d5ffd37f.chunk.js.map": "/Ateba_Music_App/static/js/2.d5ffd37f.chunk.js.map",
     "index.html": "/Ateba_Music_App/index.html",
-    "precache-manifest.16a4e993bd54a0ac2d14bdcf35b00560.js": "/Ateba_Music_App/precache-manifest.16a4e993bd54a0ac2d14bdcf35b00560.js",
+    "precache-manifest.c7961cc50e53181d3870d9d2130c05e2.js": "/Ateba_Music_App/precache-manifest.c7961cc50e53181d3870d9d2130c05e2.js",
     "service-worker.js": "/Ateba_Music_App/service-worker.js",
     "static/css/main.d12a6c17.chunk.css.map": "/Ateba_Music_App/static/css/main.d12a6c17.chunk.css.map",
     "static/js/2.d5ffd37f.chunk.js.LICENSE.txt": "/Ateba_Music_App/static/js/2.d5ffd37f.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.a5e3eb3b.js",
     "static/js/2.d5ffd37f.chunk.js",
     "static/css/main.d12a6c17.chunk.css",
-    "static/js/main.62797404.chunk.js"
+    "static/js/main.e5df6511.chunk.js"
   ]
 }

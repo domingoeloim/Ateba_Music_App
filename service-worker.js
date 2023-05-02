@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Ateba_Music_App/precache-manifest.16a4e993bd54a0ac2d14bdcf35b00560.js"
+  "/Ateba_Music_App/precache-manifest.c7961cc50e53181d3870d9d2130c05e2.js"
 );
 
 self.addEventListener('message', (event) => {
