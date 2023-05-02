@@ -81,7 +81,7 @@ class Search extends Component {
     
     // Make second axios call to grab artist albums
     userSearch = () => {
-        const apiKey = 'dd1f8d7f863d24009906d4c05cfa1d1f'
+        const apiKey = '7b9d0dc3245f56a0059bc7eb6104cd56'
 
         axios({
             url: 'http://ws.audioscrobbler.com/2.0/',
