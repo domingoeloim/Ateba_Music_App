@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "db1d81c9c34a3fd6d6f10b3c8af7d57a",
+    "revision": "93cac6f12068fd332d7ce7870b03e26b",
     "url": "/Ateba_Music_App/index.html"
   },
   {
-    "revision": "16c01292223c4e8f71fb",
+    "revision": "04dfe84f2e6b3869afec",
     "url": "/Ateba_Music_App/static/css/main.d12a6c17.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Ateba_Music_App/static/js/2.d5ffd37f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "16c01292223c4e8f71fb",
-    "url": "/Ateba_Music_App/static/js/main.cb36924a.chunk.js"
+    "revision": "04dfe84f2e6b3869afec",
+    "url": "/Ateba_Music_App/static/js/main.62797404.chunk.js"
   },
   {
     "revision": "b41db05b2ff77e5b0362",
